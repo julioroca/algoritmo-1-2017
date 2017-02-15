@@ -1,0 +1,39 @@
+// 123.cpp : Defines the entry point for the console application.
+//
+
+// Nombre:Julio Roca Paz
+// Autor: julio 
+// Fecha:15-feb-17
+
+// Declarar librerias
+#include "stdafx.h"  //Libreria del Visual C++ stdio
+#include "conio.h"   //Para manejar la entrada y getch()
+#include <iostream>  // Entrada y salida cin, cout
+
+// Declara el teclado y el monitor como la salida y entrada estandard
+using namespace std;
+
+// El cuerpo principal del programa
+void main()
+{
+   float area,base,altura; // Declaración de variables
+   // Ingreso de datos con mensaje y solicitud de datos
+   cout<<"Ingrese base: ";
+   cin>>base;
+   if (base>0){ 
+   cout<<"Ingrese altura: ";
+   cin>>altura;
+   if (altura>0){
+   // Proceso: Calculo
+   area=(base*altura)/2;
+   // Salida de la respuesta o resultado
+   cout<<"El area es: "<<area;}
+   else{
+   cout<< "solo numeros naturales y mayor a cero porfavor";
+   }}
+   else{
+	   cout<< "solo numeros naturales y mayor a cero porfavor";}
+ 
+   getch(); // Detiene la pantalla
+}
+//Finaliza el cuerpo principal
