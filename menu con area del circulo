@@ -1,0 +1,56 @@
+// lqvq.cpp : Defines the entry point for the console application.
+//Nombre: Julio Fernando Roca Paz 
+//determinar si un ciudadano puede votar
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+using namespace std;
+
+
+void  main() {
+float lado, base , altura,n,radio; int opcion;
+ cout<<"---------------menu---------------"<<endl;
+ cout<<"0.- salir del programa"<<endl;
+ cout<<"1.-area del triangulo"<<endl;
+ cout<<"2.-area del cuadrado"<<endl;
+ cout<<"3.-area del circulo"<<endl;
+ cin>> opcion;
+ switch(opcion){
+	 case 0: 
+	 cout<< "fin del programa"<<endl;
+	 break;
+ case 1: 
+	 cout<< " introduzca la base"<<endl;
+	 cin>> base; 
+	 cout<< " introduzca la alutra"<<endl;
+	 cin>> altura;
+	 n=base*altura;
+	 cout<< " el area es:"<<n;
+	 break;
+	  
+ case 2: 
+	 cout<< " introduzca el lado"<<endl;
+	 cin>> lado; 
+	 n=lado*lado;
+	 cout<< " el area es:"<<n;
+	 break;
+ case 3: 
+	 cout<< " introduzca el radio"<<endl;
+	 cin>> radio;
+	 n=3.14*radio*radio;
+	 break;
+ default : 
+	 cout<< "nro incorrecto";
+	 break;
+ 
+ }
+
+
+
+getch();
+}
+  
+
+
