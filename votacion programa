@@ -1,0 +1,27 @@
+// lqvq.cpp : Defines the entry point for the console application.
+//Nombre: Julio Fernando Roca Paz 
+//determinar si un ciudadano puede votar
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+using namespace std;
+
+
+void  main() {
+int edad;
+cout<<"introduzca la edad";
+cin>> edad;
+
+if(edad>= 18)
+  
+	cout<< "usted puede votar"<<endl;
+
+
+
+
+
+
+getch();
+}
